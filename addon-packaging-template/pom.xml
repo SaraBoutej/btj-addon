@@ -25,8 +25,8 @@
 	<name>Addon packaging template parent POM</name>
 	<description>Addon packaging template parent POM</description>
 	<modules>
-		<module>lib</module>
-		<module>webapp</module>
+		<module>services</module>
+		<module>war</module>
 		<module>packaging</module>
 	</modules>
 	<properties>
@@ -34,17 +34,10 @@
 		<maven.compiler.source>1.6</maven.compiler.source>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<org.exoplatform.depmgt.version>11-SNAPSHOT</org.exoplatform.depmgt.version>
-		<platform.version>4.3.x-SNAPSHOT</platform.version>
+		<platform.version>5.0.2</platform.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
-			<dependency>
-				<groupId>org.exoplatform</groupId>
-				<artifactId>maven-depmgt-pom</artifactId>
-				<version>${org.exoplatform.depmgt.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
 			<dependency>
 				<groupId>org.exoplatform.platform</groupId>
 				<artifactId>platform</artifactId>
